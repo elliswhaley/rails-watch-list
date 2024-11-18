@@ -1,0 +1,25 @@
+<h1><%= @list.name %></h1>
+
+<%= simple_form_for [@list, @bookmark] do |x| %>
+  <%= x.input :comment %>
+  <%= x.association :movie %>
+  <%= x.submit %>
+<% end %>
+
+<%= link_to "Go to List Page", lists_path, class: "links-index"%>
+
+<% if @list.bookmarks.empty? %>
+  <p>No movies in here</p>
+<% else %>
+  <div class="row">
+    <% @list.bookmarks.each do |bookmark| %>
+      <div class="col-3">
+        <div class="bookmark-card">
+          <img src="<%= bookmark.movie.poster_url%>" alt="<%= bookmark.movie.title %>">
+          <p><%= bookmark.movie.title %></p>
+          <p><%= bookmark.comment %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

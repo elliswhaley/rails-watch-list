@@ -1,0 +1,90 @@
+// Import page-specific CSS files here.
+@import "home";
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  background-color:rgb(228, 228, 228);
+}
+
+.list-title {
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/015/416/101/small_2x/movie-time-sign-banner-recording-projector-icons-old-picture-roll-frame-filmstrip-spotlight-festival-cinema-poster-or-flyer-template-for-your-design-illustration-free-vector.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.container {
+  // border: black solid 2px;
+  // box-shadow: 0 0 10px 5px rgba(51, 47, 46, 0.517);
+  padding: 10px;
+  display: grid;
+  border-radius: 10px;
+
+  .list-name {
+    background-image: url(https://t4.ftcdn.net/jpg/02/71/50/69/360_F_271506927_WWFfd92jDIIDx6DgMflakU14o5jRPgBm.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Fascinate, sans-serif;
+    height: 180px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    size: 100px;
+    transition: 0.3s;
+  }
+
+  h1 {
+    font-family: Fascinate, sans-serif;
+    color: grey
+  }
+}
+
+.list-name:hover {
+  transform: scale(1.1);
+}
+
+.li-design {
+  display: grid;
+  gap: 10px 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.lists {
+  padding: 10px;
+  margin: 10px;
+}
+
+.list-cards {
+  text-decoration: none;
+  color: white;
+  font-family: Fascinate, sans-serif;
+}
+
+.links-index {
+  border-color: aliceblue;
+  background-color: grey;
+  font-size: small;
+  color: black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 6px;
+  transition: 0.3s;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px black;
+}
+
+.links-index:hover {
+  background-color: black;
+  color: grey;
+  box-shadow: 0px 0px 0px black;
+}
